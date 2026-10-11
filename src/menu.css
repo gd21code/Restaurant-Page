@@ -1,0 +1,13 @@
+#menublock {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6 {
+    width: 350px;
+    height: 500px;
+}
+
+#name1, #name2, #name3, #name4, #name5, #name6 {
+    font-weight: bold;
+}
