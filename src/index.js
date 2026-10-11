@@ -1,8 +1,15 @@
 import './styles.css';
-// clear page function
-// function clearPage() {
-//     content.innerHTML = '';
-// }
+
+import homePageLoad from './home.js';
+import menuPageLoad from './menu.js';
+import aboutPageLoad from './about.js';
+
+//clear page function
+function clearPage() {
+    content.innerHTML = '';
+}
+
+homePageLoad();
 
 //button functionality
 const homeBtn = document.querySelector('#home');
@@ -10,19 +17,16 @@ const menuBtn = document.querySelector('#menu');
 const aboutBtn = document.querySelector('#about');
 
 homeBtn.addEventListener('click', () => {
-    alert('HOME');
-    //clearPage();
-    //homePageLoad();
+    clearPage();
+    homePageLoad();
 });
 
 menuBtn.addEventListener('click', () => {
-    alert('MENU');
-    //clearPage();
-    //menuPageLoad();
+    clearPage();
+    menuPageLoad();
 });
 
 aboutBtn.addEventListener('click', () => {
-    alert('ABOUT');
-    //clearPage();
-    //aboutPageLoad();
+    clearPage();
+    aboutPageLoad();
 });
